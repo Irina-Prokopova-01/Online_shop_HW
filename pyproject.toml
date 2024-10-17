@@ -13,6 +13,9 @@ pillow = "^11.0.0"
 python-dotenv = "^1.0.1"
 
 
+[tool.poetry.group.lint.dependencies]
+black = "^24.10.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
