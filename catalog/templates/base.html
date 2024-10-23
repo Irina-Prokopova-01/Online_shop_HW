@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    {% include 'header.html' %}
+{% include 'header.html' %}
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">ФЕРМЕРСКИЕ ПРОДУКТЫ</h1>
     <p class="lead">доставка за 2 часа</p>
@@ -38,7 +38,7 @@
             <div class="col-6 col-md">
                 <h5>О нас</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="/contacts/">Контакты</a></li>
+                    <li><a class="text-muted" href="{% url 'catalog:contacts' %}">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -48,3 +48,4 @@
 <!-- Подключите статичеcкие файлы со скриптами Bootstrap -->
 </body>
 </html>
+
